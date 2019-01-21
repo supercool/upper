@@ -96,7 +96,7 @@ class EventRegistrar
             $response->setCacheControlDirectiveFromString($headers->get('cache-control'));
 
             // Don't cache if private | no-cache set already
-            if ($response->hasCacheControlDirective('private') || $response->hasCacheControlDirective('no-cache')) {
+            if ($response->hasCacheControlDirective('private') || $response->hasCacheControlDirective('no-cache') || $response->statusCode == 404) {
                 $headers->set(Plugin::INFO_HEADER_NAME, 'BYPASS');
 
                 return;
