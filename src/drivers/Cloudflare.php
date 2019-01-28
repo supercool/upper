@@ -59,10 +59,13 @@ class Cloudflare extends AbstractPurger implements CachePurgeInterface
             return rtrim($this->domain, '/') . $url;
         }, $urls);
 
-        return $this->sendRequest('DELETE', 'purge_cache', [
-                'files' => $files
-            ]
-        );
+        foreach(array_chunk($files, 50) as $fileGroup) {
+            $this->sendRequest('DELETE', 'purge_cache', [
+                'files' => $fileGroup
+            ]);
+        }
+
+        return true;
     }
 
 
