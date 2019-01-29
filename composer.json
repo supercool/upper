@@ -1,8 +1,8 @@
 {
-  "name": "ostark/upper",
+  "name": "supercool/upper",
   "description": "A cache plugin for Craft - supporting multiple Edge Caches",
   "type": "craft-plugin",
-  "version": "1.4.2",
+  "version": "1.5.0",
   "keywords": [
     "craft",
     "cms",
@@ -14,8 +14,8 @@
     "keycdn"
   ],
   "support": {
-    "docs": "https://github.com/ostark/upper/blob/master/README.md",
-    "issues": "https://github.com/ostark/upper/issues"
+    "docs": "https://github.com/supercool/upper/blob/master/README.md",
+    "issues": "https://github.com/supercool/upper/issues"
   },
   "license": "MIT",
   "authors": [
@@ -45,6 +45,6 @@
     "handle": "upper",
     "hasCpSettings": false,
     "hasCpSection": false,
-    "changelogUrl": "https://raw.githubusercontent.com/ostark/upper/master/CHANGELOG.md"
+    "changelogUrl": "https://raw.githubusercontent.com/supercool/upper/master/CHANGELOG.md"
   }
 }
